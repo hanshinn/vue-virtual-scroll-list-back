@@ -49,13 +49,13 @@ const routes = [
 
 // just for development, if you want to run this project in your local
 // please copy a any example and rename it as dev in example/src/views folder
-if (process.env.NODE_ENV === 'development') {
-  routes.push({
-    path: '/dev',
-    name: 'dev',
-    component: () => import(/* webpackChunkName: "dev" */ '../views/dev/Main.vue')
-  })
-}
+// if (process.env.NODE_ENV === 'development') {
+//   routes.push({
+//     path: '/dev',
+//     name: 'dev',
+//     component: () => import(/* webpackChunkName: "dev" */ '../views/dev/Main.vue')
+//   })
+// }
 
 const router = new VueRouter({
   routes

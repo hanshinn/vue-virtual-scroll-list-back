@@ -4,19 +4,28 @@
 
 export const VirtualProps = {
   dataKey: {
+    // 数据分录唯一标识
     type: [String, Function],
     required: true
   },
   dataSources: {
+    // 滚动区域数据列表
     type: Array,
     required: true
   },
   dataComponent: {
+    // 滚动内容单项子组件
     type: [Object, Function],
     required: true
   },
+  dataPerRow: {
+    // 每行显示的个数
+    type: Number,
+    default: 2
+  },
 
   keeps: {
+    // 滚动区域渲染的数据条数
     type: Number,
     default: 30
   },
@@ -33,10 +42,12 @@ export const VirtualProps = {
     default: 'vertical' // the other value is horizontal
   },
   start: {
+    // 设置一个初始值，从第几个开始显示在当前可视区域（渲染数据的索引）
     type: Number,
     default: 0
   },
   offset: {
+    // 设置偏移量，向下偏移 offset 个像素
     type: Number,
     default: 0
   },
@@ -49,6 +60,7 @@ export const VirtualProps = {
     default: 0
   },
   pageMode: {
+    // 是否是整个页面作为滚动区域进行渲染
     type: Boolean,
     default: false
   },

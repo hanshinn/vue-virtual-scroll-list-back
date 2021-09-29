@@ -4,6 +4,9 @@
     "browser": true,
     "amd": true
   },
+  "rules": {
+    "no-debugger": "off"
+  },
   "globals": {
     "it": "readonly",
     "expect": "readonly",
